@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+#Mac desktop service store files
+.DS_Store
+
+#Prettier 
+.prettierrc.json
