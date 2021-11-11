@@ -125,6 +125,16 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  min-height: 80px;
+  background-color: var(--accent-text-and-bg-color);
+}
+
 /* ---------- LOGO ---------- */
 
 .logo {
@@ -369,17 +379,19 @@ button {
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
 .modal-box {
   position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
   width: 528px;
   height: 581px;
-  left: 536px;
-  top: 221px;
+  padding: 40px;
 
   background-color: var(--accent-text-and-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -441,7 +453,7 @@ button {
   height: 70px;
 }
 
-.features-item .item-title {
+.item-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -459,6 +471,10 @@ button {
   display: flex;
 }
 
+.about-item {
+  position: relative;
+}
+
 .about-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -466,6 +482,21 @@ button {
 .about-img,
 .team-img {
   display: block;
+}
+
+.about-item .item-title {
+  margin-bottom: 0;
+  padding: 27px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+
+  text-transform: uppercase;
+  color: var(--accent-text-and-bg-color);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* ---------- TEAM ---------- */
