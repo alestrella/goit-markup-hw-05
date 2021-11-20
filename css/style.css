@@ -119,20 +119,15 @@ img {
 }
 
 .button {
-  min-width: 200px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
 
   background-color: var(--accent-color);
-  color: var(--accent-text-and-bg-color);
 
-  transition: background-color var(--duration) var(--timing-function);
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--hover-main-btn-color);
+  transition-property: color, background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 .social-icon {
@@ -401,6 +396,12 @@ img {
 
 .hero-btn {
   padding: 10px 32px;
+  color: var(--accent-text-and-bg-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hover-main-btn-color);
 }
 
 .hero-btn,
