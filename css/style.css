@@ -646,18 +646,18 @@ img {
   height: 100%;
 
   background: var(--overlay-card-color);
-  /* opacity: 0; */
 
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
+
+  overflow-y: auto;
 }
 
 .portfolio .link:hover .overlay,
 .portfolio .link:focus .overlay {
   transform: translateY(0);
-  /* opacity: 1; */
 }
 
 .overlay-text {
