@@ -142,7 +142,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-fixed {
+.fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -261,6 +261,12 @@ img {
   background: var(--accent-color);
 
   border-radius: 2px;
+}
+
+/* ---------- MAIN ---------- */
+
+.main {
+  margin-top: 80px;
 }
 
 /* ---------- FOOTER ---------- */
@@ -468,12 +474,13 @@ img {
 }
 
 .about-item .item-title {
-  margin-bottom: 0;
-  padding: 27px;
   position: absolute;
   bottom: 0;
   right: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
   width: 100%;
   height: 70px;
 
@@ -591,7 +598,7 @@ img {
 
   background-color: var(--secondary-bg-color);
 
-  transition-property: color, background-color, filter;
+  transition-property: color, background-color, box-shadow;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
 }
@@ -601,7 +608,7 @@ img {
 .filter-btn.current {
   background-color: var(--accent-color);
   color: var(--accent-text-and-bg-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* ---------- EXAMPLES ---------- */
